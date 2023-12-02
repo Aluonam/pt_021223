@@ -14,6 +14,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <DataTable></DataTable>
+        <br></br>
+        <br></br>
         <TurnSentence></TurnSentence>
       </main>
     </>
