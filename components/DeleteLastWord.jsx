@@ -7,10 +7,10 @@ const DeleteLastWord = () => {
 
   return (
     <div>
+        {dataInput}
         <h3>Write the sentence</h3>
-        <input onChange={(e)=>{e.target.value}}></input>
-        <button>Delete last word</button>
-
+        <input onChange={(e)=>{setDataInput(e.target.value)}}></input>
+        <button onClick={()=>{}}>Delete last word</button>
     </div>
   )
 }
