@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import DataTable from '@/components/DataTable'
 import TurnSentence from '@/components/TurnSentence'
+import DeleteLastWord from '@/components/DeleteLastWord'
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
         <br></br>
         <br></br>
         <TurnSentence></TurnSentence>
+        <br></br>
+        <br></br>
+        <DeleteLastWord></DeleteLastWord>
       </main>
     </>
   )
