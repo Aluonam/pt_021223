@@ -30,7 +30,7 @@ const DataTable = () => {
   return (
     <>
     <h3>Data Table</h3>
-    <table>
+    <table style={{ border: "1px solid black"}}>
         <thead>
             <tr>
                 <th>Id</th>
