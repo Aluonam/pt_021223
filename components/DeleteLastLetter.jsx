@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const DeleteLastWord = () => {
+const DeleteLastLetter = () => {
 
     const [dataInput, setDataInput] = useState([]);
 
@@ -23,4 +23,4 @@ const DeleteLastWord = () => {
   )
 }
 
-export default DeleteLastWord
+export default DeleteLastLetter
