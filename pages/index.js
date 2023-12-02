@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import DataTable from '@/components/DataTable'
+import TurnSentence from '@/components/TurnSentence'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <DataTable></DataTable>
+        <TurnSentence></TurnSentence>
       </main>
     </>
   )
