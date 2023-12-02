@@ -23,7 +23,7 @@ const DataTable = () => {
                 <th>{element.id.value}</th>
                 <th>{element.location.city}</th>
                 <th>{element.name.first}{element.name.last}</th>
-                <th><ModalANT></ModalANT></th>
+                <th><ModalANT element={element}></ModalANT></th>
             </tr>
         )
     })
