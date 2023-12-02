@@ -6,16 +6,16 @@ const DataTable = () => {
     const [dataAPI, setSataAPI] = useState([])
 
     useEffect(() => {
-        try{     
-            const apiConsume = async ()=>{
-            const url = await fetch(`https://randomuser.me/api/?results=20`);
-            const data = await url.json();
-            console.log(data.results)
-            setSataAPI(data.results)
-        }
+        try{  
         apiConsume()
         }catch(error){error, "error detected"}
     }, [])
+
+     const apiConsume = async ()=>{
+            const url = await fetch(`https://randomuser.me/api/?results=20`);
+            const data = await url.json();
+            setSataAPI(data.results)
+        }
     
     const tableData = dataAPI.map((element)=>{
         return(
@@ -31,7 +31,7 @@ const DataTable = () => {
   return (
     <>
     <h3>Data Table</h3>
-    <table style={{ border: "1px solid black"}}>
+    <table>
         <thead>
             <tr>
                 <th>Id</th>
